@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar";
+export { default as fourofour } from "./Errorpage";
+export { default as Hero } from "./Hero";
+export { default as Events } from "./Events";
+export { default as Bento } from "./Bento";
+export { default as Competitions } from "./Competitions";
+export { default as FAQ } from "./FAQ";
+export { default as Footer } from "./Footer";
+export { default as Team } from "./Team";
+export { default as Stats } from "./Stats";

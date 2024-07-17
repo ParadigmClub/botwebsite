@@ -1,0 +1,16 @@
+.events-section {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+.container {
+  /* Assuming there's a parent container */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.events-section {
+  flex: 1; /* Adjust based on how you want to allocate space */
+}
+.events-section {
+  height: auto; /* Adjust based on content, or set a specific height */
+  overflow: hidden; /* Prevents content from spilling out */
+}

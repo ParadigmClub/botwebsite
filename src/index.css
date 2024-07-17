@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Black%20Ops%20One:700|Roboto%20Mono:400");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  color: #add8e6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Black Ops One";
+  font-weight: 700;
+  color: #a3ff00;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: row; /* Align children side by side */
+  height: 100vh; /* Full viewport height */
+}
+
+.homepage-container > * {
+  flex: 1; /* Each child takes up equal space */
+  width: 50%; /* Explicitly define width to ensure equal distribution */
+  overflow: auto; /* Adds scroll to each section if content overflows */
+}
+@media (max-width: 768px) {
+  /* Adjust the max-width as needed for your design */
+  .homepage-container > *:not(:first-child) {
+    display: none; /* Hide all children except the first one (assumed to be the hero section) */
+  }
+
+  .homepage-container > :first-child {
+    width: 100%; /* Make the hero section take up the full width */
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .homepage-container > *:not(:first-child) {
+    display: none; /* Hide all children except the first one (assumed to be the hero section) */
+  }
+
+  .homepage-container > :first-child {
+    width: 100%; /* Make the hero section take up the full width */
+  }
+}

@@ -13,22 +13,26 @@ const FAQ = () => {
       </div>
       <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2">
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question
+            question="Why should you participate"
+            answer=""
+            open={true}
+          />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question question="How To Register?" answer="BOT " open={true} />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question question="What are the dates?" answer="" />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question question="Are all events offline?" answer="" />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question question="Who are eligible to take part" answer="" />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="" answer="" />
+          <Question question="Can i register privately?" answer="" />
         </AnimationOnScroll>
       </div>
     </div>
@@ -37,8 +41,14 @@ const FAQ = () => {
 function Question(props) {
   return (
     <div>
-      <details className="group rounded-lg p-12 m-2 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-white">
+      <details
+        className="group rounded-lg p-12 m-2 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden"
+        open={props.open ? true : false}
+      >
+        <summary
+          className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-white"
+          open
+        >
           <h4 className="font-medium text-clip">
             [Q] {props.question || "What is Lorem Ipsum?"}
           </h4>

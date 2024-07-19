@@ -96,20 +96,20 @@ function Stats() {
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <Counter value={30} start={inView} />
+            <Counter value={10} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <div className="stat-title mt-1">Schools Over NCR</div>
+            <div className="stat-title mt-1">Mega Events</div>
           </AnimationOnScroll>
         </div>
 
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <Counter value={30} start={inView} />
+            <Counter value={501} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <div className="stat-title mt-1">Schools Over NCR</div>
+            <div className="stat-title mt-1">Participants</div>
           </AnimationOnScroll>
         </div>
       </div>

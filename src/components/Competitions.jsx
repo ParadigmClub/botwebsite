@@ -35,7 +35,7 @@ function Competitions() {
                 title={product.name}
                 description={product.description}
                 details={product.details}
-                previewImage="https://via.placeholder.com/150"
+                previewImage={product.previewImage}
                 link={product.amazonLink}
                 mode={product.mode}
                 domain={product.domain}

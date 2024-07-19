@@ -1,9 +1,10 @@
 import React from "react";
 import * as Component from "./components";
 import "animate.css/animate.compat.css";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+function Core() {
   return (
     <>
       <div>
@@ -33,15 +34,7 @@ function App() {
                   </>
                 }
               ></Route>
-              <Route
-                path="/events"
-                element={
-                  <>
-                    <Component.Navbar />
-                    <Component.Competitions />
-                  </>
-                }
-              ></Route>
+
               <Route path="/contact" element={<></>}></Route>
               <Route path="*" element={<Component.fourofour />} />
             </Routes>
@@ -52,5 +45,13 @@ function App() {
     </>
   );
 }
-
+function App() {
+  const [loading, setLoading] = React.useState(false);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 3000);
+  });
+  return <div>{loading ? <Core /> : <Component.Loader />}</div>;
+}
 export default App;

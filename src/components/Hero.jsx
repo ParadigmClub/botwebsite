@@ -2,6 +2,7 @@ import React from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
 import Typewriter from "typewriter-effect";
 import Logo from "../logo.jpg";
+import NoBg from "../public/botlogbg.png";
 
 function Hero() {
   return (
@@ -9,8 +10,11 @@ function Hero() {
       <div className="align-center text-center">
         <AnimationOnScroll animateIn="fadeInDownBig" animateOnce={true}>
           <div className="avatar">
-            <div className="w-48 mask mask-circle">
+            {/* <div className="w-48 mask mask-circle">
               <img src={Logo} alt="my image" />
+            </div> */}
+            <div className="w-60">
+              <img src={NoBg} alt="my image" />
             </div>
           </div>
         </AnimationOnScroll>

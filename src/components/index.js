@@ -8,3 +8,4 @@ export { default as FAQ } from "./FAQ";
 export { default as Footer } from "./Footer";
 export { default as Team } from "./Team";
 export { default as Stats } from "./Stats";
+export { default as Loader } from "./Loader";

@@ -1,6 +1,6 @@
 import React from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
-
+import "../styles/team.css";
 function Team() {
   return (
     <div className="bg-base-100">
@@ -78,14 +78,14 @@ function TeamMember(props) {
   return (
     <div
       id="component-demo"
-      className=" items-center gap-4 overflow-y-hidden overflow-x-scroll px-10 pt-1 pb-10 xl:grid xl:overflow-x-auto xl:px-4"
+      className=" scr items-center gap-4 overflow-y-hidden overflow-x-scroll px-10 pt-1 pb-10 xl:grid xl:overflow-x-auto xl:px-4"
     >
       <AnimationOnScroll
         animateIn="jackInTheBox"
         animateOnce={true}
         className="overflow-hidden"
       >
-        <div className="bg-[#9713fb] rounded-box col-span-3 row-span-3 mx-2 grid w-72 flex-shrink-0 place-items-center items-center gap-4 p-4 py-8 shadow-xl xl:mx-0 xl:w-full ">
+        <div className="bg-[#9713fb] scr rounded-box col-span-3 row-span-3 mx-2 grid w-72 flex-shrink-0 place-items-center items-center gap-4 p-4 py-8 shadow-xl xl:mx-0 xl:w-full ">
           <div className="dropdown">
             <div tabindex="0">
               <div className=" avatar">

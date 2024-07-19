@@ -1,4 +1,26 @@
+import Mechabreak from "../public/mechabreakpreview.webp";
+
 const products = [
+  {
+    id: 10,
+    name: "TechnoTire",
+    description:
+      "Design a Flyer on the topic 'Future Innovations in Technology' using MS Word.",
+    imageUrl: "https://via.placeholder.com/150",
+    mode: "Offline(Round 2)",
+    domain: "Class II",
+    participants: "2",
+    theme: "Web Browsers and Search Engine",
+    software: "physical costume",
+    judgmentCriteria: [
+      "Relevance to the topic\n",
+      "Creativity\n",
+      "Overall Presentation\n",
+    ],
+    eventIncharge: "Vijeta Mishra",
+    contactNumber: " 9971617120",
+    emoji: "👔",
+  },
   {
     id: 1,
     name: "Tech Print",
@@ -139,6 +161,7 @@ const products = [
     eventIncharge: "Taruna Butani",
     contactNumber: "9818667337",
     emoji: "🧑‍🚀",
+    previewImage: Mechabreak,
   },
   {
     id: 8,

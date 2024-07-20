@@ -20,7 +20,7 @@ function Team() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 ">
         <TeamMember
-          name="Medhansh Kapoor"
+          name="Medhansh"
           avatar="https://github.com/whirlxd.png"
           title1="Site Developer"
           title2="Vice President"
@@ -29,41 +29,41 @@ function Team() {
         ></TeamMember>
 
         <TeamMember
-          name="John Doe"
+          name="Arquam"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="President"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="John Doe"
+          name="Rayyan"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="Event Manager[AIFSG]"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="John Doe"
+          name="Aditya"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="Council Head"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="John Doe"
+          name="Ayaan"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="Event Manager[CodeQuest]"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="John Doe"
+          name="Vansh"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="Graphic Designer"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
@@ -85,7 +85,7 @@ function TeamMember(props) {
         animateOnce={true}
         className="overflow-hidden"
       >
-        <div className="bg-[#9713fb] scr rounded-box col-span-3 row-span-3 mx-2 grid w-72 flex-shrink-0 place-items-center items-center gap-4 p-4 py-8 shadow-xl xl:mx-0 xl:w-full ">
+        <div className="bg-[#9713fb] scr rounded-box col-span-3 row-span-3 mx-2 grid w-72 flex-shrink-0 place-items-center items-center gap-4 p-4 py-8 shadow-xl xl:mx-0 xl:w-full hover:scale-95 transition-transform scroll-smooth ">
           <div className="dropdown">
             <div tabindex="0">
               <div className=" avatar">

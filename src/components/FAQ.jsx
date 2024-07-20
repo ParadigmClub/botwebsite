@@ -15,24 +15,40 @@ const FAQ = () => {
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
           <Question
             question="Why should you participate"
-            answer=""
+            answer="Battle Of Titans is a platform for students to showcase their skills and talents. It is a great opportunity for students to learn and grow. "
             open={true}
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="How To Register?" answer="BOT " open={true} />
+          <Question
+            question="How To Register?"
+            answer="The registration form has been sent to all the schools. The form is also linked above. Individual participants are not allowed. Your school must register you."
+            open={true}
+          />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
-          <Question question="What are the dates?" answer="" />
+          <Question
+            question="What are the dates?"
+            answer="The event will take place on 8th august in school premises itself. Participants are requested to check dates for prelims of competitions beforehand"
+          />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="Are all events offline?" answer="" />
+          <Question
+            question="Are all events offline?"
+            answer="NO, Majority of the events will take place offline however AIFSG ,Sprite Surge & Tech print will have online rounds"
+          />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
-          <Question question="Who are eligible to take part" answer="" />
+          <Question
+            question="Who are eligible to take part"
+            answer="All students corresponding to their age group are allowed to take part in representing their school for this mega event"
+          />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
-          <Question question="Can i register privately?" answer="" />
+          <Question
+            question="Can i register privately?"
+            answer="NO. Private registrations are not allowed ,your school must register you"
+          />
         </AnimationOnScroll>
       </div>
     </div>

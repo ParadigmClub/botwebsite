@@ -31,7 +31,11 @@ function Navbar() {
 
     return () => clearTimeout(timer);
   });
-
+  function brochureDownload() {
+    window.open(
+      "https://drive.google.com/file/d/1nfFasWViIZJvpvdJ9DTM6lwLue2gPcG1/view?usp=sharing"
+    );
+  }
   return (
     <Headroom
       style={{
@@ -148,6 +152,9 @@ function Navbar() {
               <li>
                 <a href="#faq">FAQ</a>
               </li>
+              <li>
+                <button onClick={brochureDownload}>BROCHURE</button>
+              </li>
             </ul>
           </div>
           <a href="/" className="btn btn-ghost text-xl">
@@ -243,6 +250,9 @@ function Navbar() {
                   </li>
                 </ul>
               </details>
+            </li>
+            <li>
+              <button onClick={brochureDownload}>BROCHURE</button>
             </li>
           </ul>
         </div>

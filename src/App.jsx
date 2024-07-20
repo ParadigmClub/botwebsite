@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as Component from "./components";
 import "animate.css/animate.compat.css";
 
@@ -16,7 +16,7 @@ function Core() {
                 element={
                   <>
                     <Component.Navbar />
-                    <div className="homepage-container homepage-container">
+                    <div className="homepage-container homepage-container bg-base-200">
                       <Component.Hero />
                       <Component.Bento />
                     </div>
@@ -46,12 +46,30 @@ function Core() {
   );
 }
 function App() {
-  const [loading, setLoading] = React.useState(false);
-  React.useEffect(() => {
+  const [loading, setLoading] = React.useState(true);
+  const [transitionClass, setTransitionClass] = useState("");
+  useEffect(() => {
     setTimeout(() => {
-      setLoading(true);
-    }, 3000);
-  });
-  return <div>{loading ? <Core /> : <Component.Loader />}</div>;
+      setTransitionClass("fade-out");
+      setTimeout(() => {
+        setLoading(false);
+        setTransitionClass("fade-in");
+      }, 500); // This should match the duration of the fade-out animation
+    }, 4000);
+  }, []);
+  return (
+    <div>
+      {" "}
+      {loading ? (
+        <div className={transitionClass}>
+          <Component.Loader />
+        </div>
+      ) : (
+        <div className={transitionClass}>
+          <Core />
+        </div>
+      )}
+    </div>
+  );
 }
 export default App;

@@ -1,8 +1,8 @@
 /* HTML: <div class="loader"></div> */
 .loader {
-  width: 40px;
+  width: 45px;
   aspect-ratio: 1;
-  color: #f03355;
+  color: #a3ff00;
   position: relative;
   background: radial-gradient(10px, currentColor 94%, #0000);
 }
@@ -18,7 +18,7 @@
     radial-gradient(9px at top left, #0000 94%, currentColor) bottom right;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  animation: l18 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+  animation: l18 1s infinite cubic-bezier(0.3, 1, 0, 1);
 }
 @keyframes l18 {
   33% {

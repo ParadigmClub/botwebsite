@@ -14,12 +14,12 @@ function Competitions() {
     return (
       <div className="container mx-auto px-6 py-8">
         <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
-          <h1 className="text-5xl font-bold text-center mb-8">Competitions</h1>
+          <h1 className="text-5xl font-bold text-center mb-8">Events</h1>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="bounceInDown" animateOnce={true}>
           <input
             type="text"
-            placeholder="🔎 Search competitions..."
+            placeholder="🔎 Search events..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="input input-bordered w-full h-12 mb-8 align-middle text-center content-center justify-center items-center outline-zinc-400 hover:outline-dashed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 focus:ring-offset-primary-200"
@@ -98,6 +98,7 @@ function Card(props) {
                   className="rounded-xl"
                   height={200}
                   width={200}
+                  loading="lazy"
                 />
               </figure>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
 import CodeQuest from "../public/codequest.webp";
 import TechPrint from "../public/techprint.webp";
@@ -9,8 +9,50 @@ import MechaDash from "../public/mechadash.webp";
 import Sprite from "../public/spritesurge.webp";
 
 function Bento() {
+  const [gridStyle, setGridStyle] = useState({
+    display: "grid",
+    height: "100%",
+    width: "100%",
+    gridTemplateColumns: "repeat(4, 1fr)",
+    gridTemplateRows: "repeat(4, 1fr)",
+    gap: "16px",
+    padding: "8px",
+    borderRadius: "8px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1)",
+  });
+
+  useEffect(() => {
+    const adjustGridForScreenSize = () => {
+      const screenWidth = window.innerWidth;
+      let columns = "repeat(4, 1fr)"; // Default for large screens
+
+      if (screenWidth < 600) {
+        columns = "repeat(2, 1fr)"; // Adjust for small screens
+      } else if (screenWidth >= 600 && screenWidth <= 900) {
+        columns = "repeat(3, 1fr)"; // Adjust for medium screens
+      }
+
+      setGridStyle((prevStyle) => ({
+        ...prevStyle,
+        gridTemplateColumns: columns,
+      }));
+    };
+
+    window.addEventListener("resize", adjustGridForScreenSize);
+    adjustGridForScreenSize(); // Call it initially
+
+    return () => window.removeEventListener("resize", adjustGridForScreenSize);
+  }, []);
+
   return (
-    <div>
+    <div
+      style={{
+        justifyContent: "center",
+        overflow: "hidden",
+        padding: "8px",
+        background: "bg-base-200",
+      }}
+    >
       <div
         className="container bg-base-200"
         style={{
@@ -24,21 +66,7 @@ function Bento() {
           padding: "8px",
         }}
       >
-        <div
-          className="grid"
-          style={{
-            display: "grid",
-            height: "100%",
-            width: "100%",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gridTemplateRows: "repeat(4, 1fr)",
-            gap: "16px",
-            padding: "8px",
-            borderRadius: "8px",
-            boxShadow:
-              "0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1)",
-          }}
-        >
+        <div className="grid" style={gridStyle}>
           <div
             className="transition-transform duration-200 hover:scale-90"
             style={{

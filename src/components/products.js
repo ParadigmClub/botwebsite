@@ -160,7 +160,7 @@ const products = [
     ],
     eventIncharge: "Taruna Butani",
     contactNumber: "9818667337",
-    emoji: "🧑‍🚀",
+    emoji: "🚗",
     previewImage: Mechabreak,
   },
   {

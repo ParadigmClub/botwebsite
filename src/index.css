@@ -62,22 +62,21 @@ small {
   overflow: auto; /* Adds scroll to each section if content overflows */
 }
 @media (max-width: 768px) {
-  /* Adjust the max-width as needed for your design */
   .homepage-container > *:not(:first-child) {
-    display: none; /* Hide all children except the first one (assumed to be the hero section) */
+    display: none;
   }
 
   .homepage-container > :first-child {
-    width: 100%; /* Make the hero section take up the full width */
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .homepage-container > *:not(:first-child) {
-    display: none; /* Hide all children except the first one (assumed to be the hero section) */
+    display: none;
   }
 
   .homepage-container > :first-child {
-    width: 100%; /* Make the hero section take up the full width */
+    width: 100%;
   }
 }
 .fade-out {

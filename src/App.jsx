@@ -55,7 +55,7 @@ function App() {
         setLoading(false);
         setTransitionClass("fade-in");
       }, 500); // This should match the duration of the fade-out animation
-    }, 4000);
+    }, 2500);
   }, []);
   return (
     <div>

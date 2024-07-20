@@ -7,8 +7,9 @@ import Valo from "../public/digicombat.webp";
 import LogoFusion from "../public/logofusion.webp";
 import MechaDash from "../public/mechadash.webp";
 import Sprite from "../public/spritesurge.webp";
-
+import Loader from "./Loader";
 function Bento() {
+  const [loadedImages, setLoadedImages] = useState(0);
   const [gridStyle, setGridStyle] = useState({
     display: "grid",
     height: "100%",
@@ -20,7 +21,6 @@ function Bento() {
     borderRadius: "8px",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1)",
   });
-
   useEffect(() => {
     const adjustGridForScreenSize = () => {
       const screenWidth = window.innerWidth;
@@ -43,6 +43,26 @@ function Bento() {
 
     return () => window.removeEventListener("resize", adjustGridForScreenSize);
   }, []);
+  useEffect(() => {
+    // Preload images and listen for the load event
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => setLoadedImages((prev) => prev + 1);
+    });
+  }, []);
+  const images = [
+    CodeQuest,
+    TechPrint,
+    MechaBreak,
+    Valo,
+    LogoFusion,
+    MechaDash,
+    Sprite,
+  ];
+  if (loadedImages < images.length) {
+    return <Loader />; // Show loader while images are loading
+  }
 
   return (
     <div
@@ -85,6 +105,7 @@ function Bento() {
             <AnimationOnScroll animateIn="zoomIn" animateOnce={true}>
               <img
                 className="rounded"
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",

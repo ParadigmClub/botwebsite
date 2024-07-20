@@ -69,10 +69,6 @@ small {
 
   .homepage-container > :first-child {
     width: 100%; /* Make the hero section take up the full width */
-    background-image: url("./public/botbackground.png"); /* Set the background image */
-    opacity: 25;
-    background-size: cover; /* Cover the entire section with the image */
-    background-position: center; /* Center the background image */
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -82,10 +78,6 @@ small {
 
   .homepage-container > :first-child {
     width: 100%; /* Make the hero section take up the full width */
-    background-image: url("./public/botbackground.png"); /* Set the background image */
-    opacity: 25;
-    background-size: cover; /* Cover the entire section with the image */
-    background-position: center; /* Center the background image */
   }
 }
 .fade-out {

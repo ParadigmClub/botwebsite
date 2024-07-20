@@ -29,41 +29,65 @@ function Team() {
         ></TeamMember>
 
         <TeamMember
-          name="Arquam"
-          avatar="https://github.com/whirlxd.png"
+          name="Md.Arquam"
+          avatar="https://avatar.iran.liara.run/public/boy"
           title1="President"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="Rayyan"
-          avatar="https://github.com/whirlxd.png"
+          name="Md.Rayyan"
+          avatar="https://avatar.iran.liara.run/public/boy"
           title1="Event Manager[AIFSG]"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="Aditya"
-          avatar="https://github.com/whirlxd.png"
+          name="Aditya Das"
+          avatar="https://avatar.iran.liara.run/public/boy"
           title1="Council Head"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="Ayaan"
-          avatar="https://github.com/whirlxd.png"
+          name="Ayaan Hashmi"
+          avatar="https://avatar.iran.liara.run/public/boy"
           title1="Event Manager[CodeQuest]"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
         <TeamMember
-          name="Vansh"
-          avatar="https://github.com/whirlxd.png"
-          title1="Graphic Designer"
+          name="Aditya S. Verma"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Event Manager[DigiCombat]"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+        <TeamMember
+          name="Pratham Singh"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Event Manager[DigiCombat]"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+        <TeamMember
+          name="Samridh Khanna"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Robotics President"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+        <TeamMember
+          name="Manara Naqvi"
+          avatar="https://avatar.iran.liara.run/public/girl"
+          title1="President"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"

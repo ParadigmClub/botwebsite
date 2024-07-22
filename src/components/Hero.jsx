@@ -6,19 +6,23 @@ import NoBg from "../public/botlogbg.png";
 
 function Hero() {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="align-center text-center">
+    <div className="min-h-screen hero bg-base-200">
+      <div className="text-center align-center">
         <AnimationOnScroll animateIn="fadeInDownBig" animateOnce={true}>
           <div className="avatar">
             {/* <div className="w-48 mask mask-circle">
               <img src={Logo} alt="my image" />
             </div> */}
             <div className="w-60">
-              <img src={NoBg} alt="my image" />
+              {/* <img
+                src="https://media.discordapp.net/attachments/1264873364237975623/1264942528294293546/image.png?ex=669fb508&is=669e6388&hm=64f7b7eaae06e4668079afee414e7f606a43ad6aa6329408ecd5ad4f9345077e&=&format=webp&quality=lossless&width=452&height=437"
+                alt="my image"
+                className="mask mask-circle"
+              /> */}
             </div>
           </div>
         </AnimationOnScroll>
-        <div className="hero-content text-center">
+        <div className="text-center hero-content">
           <div className="max-w-md">
             <AnimationOnScroll animateIn="fadeInUp" animateOnce={true}>
               <h1 className="text-5xl text-[#a3ff00] font-bold">
@@ -44,11 +48,11 @@ function Hero() {
               />
             </p>
 
-            <div className="rid grid-cols-2 grid-rows-1 gap-6">
+            <div className="grid-cols-2 grid-rows-1 gap-6 rid">
               <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true}>
                 <a
                   href="#competitions"
-                  className="btn btn-outline btn-warning btn-wide mb-2 "
+                  className="mb-2 btn btn-outline btn-warning btn-wide "
                 >
                   Events
                 </a>
@@ -60,7 +64,7 @@ function Hero() {
               >
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfoIp-3erOri72MpCI5F-jYFvS9XLNLS-De2aWW3ywQeBk65Q/viewform"
-                  className="btn btn-outline btn-info btn-wide mt-2"
+                  className="mt-2 btn btn-outline btn-info btn-wide"
                   target="_blank"
                 >
                   Registration

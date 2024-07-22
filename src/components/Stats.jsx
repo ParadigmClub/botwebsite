@@ -24,7 +24,7 @@ function Counter({ value }) {
   return (
     <div
       style={{ fontSize }}
-      className="flex space-x-3 overflow-hidden rounded bg-white px-2 leading-none text-gray-900"
+      className="flex px-2 space-x-3 overflow-hidden leading-none text-gray-900 bg-white rounded"
     >
       <Digit place={100} value={value} />
       <Digit place={10} value={value} />
@@ -81,35 +81,35 @@ function Stats() {
     threshold: 0.5, // Trigger when 50% of the item is in view
   });
   return (
-    <div className="container mx-auto items-center overflow-hidden">
-      <div className="stats stats-vertical lg:stats-horizontal mb-10 shadow">
+    <div className="container items-center mx-auto overflow-hidden">
+      <div className="mb-10 shadow stats stats-vertical lg:stats-horizontal">
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
             <Counter value={30} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <div className="stat-title mt-1">Schools Over NCR</div>
+            <div className="mt-1 stat-title">Schools Over NCR</div>
           </AnimationOnScroll>
         </div>
 
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
-          <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
+          <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
             <Counter value={10} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <div className="stat-title mt-1">Mega Events</div>
+            <div className="mt-1 stat-title">Mega Events</div>
           </AnimationOnScroll>
         </div>
 
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
-          <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
+          <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true}>
             <Counter value={501} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <div className="stat-title mt-1">Participants</div>
+            <div className="mt-1 stat-title">Participants</div>
           </AnimationOnScroll>
         </div>
       </div>

@@ -7,7 +7,7 @@ const FAQ = () => {
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="text-5xl text-center font-bold mb-10">F-A-Q</h1>
+            <h1 className="mb-10 text-5xl font-bold text-center">F-A-Q</h1>
           </div>
         </div>
       </div>
@@ -16,14 +16,12 @@ const FAQ = () => {
           <Question
             question="Why should you participate"
             answer="Battle Of Titans is a platform for students to showcase their skills and talents. It is a great opportunity for students to learn and grow. "
-            open={true}
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
           <Question
             question="How To Register?"
             answer="The registration form has been sent to all the schools. The form is also linked above. Individual participants are not allowed. Your school must register you."
-            open={true}
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
@@ -72,7 +70,7 @@ function Question(props) {
           <span className="relative size-5 shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+              className="absolute inset-0 opacity-100 size-5 group-open:opacity-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -87,7 +85,7 @@ function Question(props) {
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+              className="absolute inset-0 opacity-0 size-5 group-open:opacity-100"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

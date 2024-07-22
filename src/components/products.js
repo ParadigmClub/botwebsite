@@ -1,4 +1,14 @@
 import Mechabreak from "../public/mechabreakpreview.webp";
+import Mechadash from "../public/thumb/md.png";
+import Techprint from "../public/thumb/techprint.png";
+import Techtrek from "../public/thumb/techtrek.png";
+import Logofusion from "../public/thumb/logofusion.png";
+
+import Sprite from "../public/thumb/sprite.png";
+import AI from "../public/thumb/ai.png";
+
+import Digi from "../public/thumb/digicombat.png";
+import Code from "../public/thumb/codequest.png";
 
 const products = [
   {
@@ -41,6 +51,7 @@ const products = [
     eventIncharge: "Vijeta Mishra",
     contactNumber: "9560874111",
     emoji: "🖨️",
+    previewImage: Techprint,
   },
   {
     id: 2,
@@ -58,6 +69,7 @@ const products = [
     eventIncharge: "Manisha Pal",
     contactNumber: "9958995077",
     emoji: "🚀",
+    previewImage: Techtrek,
   },
   {
     id: 3,
@@ -81,6 +93,7 @@ const products = [
     eventIncharge: "Suksham Khare",
     contactNumber: "9871422159",
     emoji: "🎨",
+    previewImage: Logofusion,
   },
   {
     id: 4,
@@ -96,6 +109,7 @@ const products = [
     eventIncharge: "Taruna Butani",
     contactNumber: "9818667337",
     emoji: "🤖",
+    previewImage: Mechadash,
   },
   {
     id: 5,
@@ -115,6 +129,7 @@ const products = [
     eventIncharge: "Suksham Khare",
     contactNumber: "9871422159",
     emoji: "🎮",
+    previewImage: Sprite,
   },
   {
     id: 6,
@@ -141,6 +156,7 @@ const products = [
     eventIncharge: "Ms. Hina Sumbul",
     contactNumber: "7506721367",
     emoji: "🧠",
+    previewImage: AI,
   },
   {
     id: 7,
@@ -178,6 +194,7 @@ const products = [
     eventIncharge: "Ms. Ranjana Bajaj",
     contactNumber: "9891435310",
     emoji: "🔫",
+    previewImage: Digi,
   },
   {
     id: 9,
@@ -199,6 +216,7 @@ const products = [
     eventIncharge: "Ms. Ranjana Bajaj/ Ms. Prajakta Kalgaonkar",
     contactNumber: "9891435310/ 9818137177",
     emoji: "💻",
+    previewImage: Code,
   },
 ];
 

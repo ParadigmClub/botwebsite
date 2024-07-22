@@ -3,7 +3,8 @@ import AnimationOnScroll from "react-animate-on-scroll";
 import Typewriter from "typewriter-effect";
 import Logo from "../logo.jpg";
 import NoBg from "../public/botlogbg.png";
-
+import newLogo from "../public/botnewlogo.webp";
+import yLogo from "../public/botnewlogoyellow.webp";
 function Hero() {
   return (
     <div className="min-h-screen hero bg-base-200">
@@ -14,7 +15,12 @@ function Hero() {
               <img src={Logo} alt="my image" />
             </div> */}
             <div className="w-60">
-              <img src={NoBg} alt="my image" className="mask mask-circle" />
+              <img
+                src={newLogo}
+                alt="my image"
+                className="mask mask-circle"
+                loading="lazy"
+              />
             </div>
           </div>
         </AnimationOnScroll>

@@ -9,6 +9,7 @@ import AI from "../public/thumb/ai.png";
 
 import Digi from "../public/thumb/digicombat.png";
 import Code from "../public/thumb/codequest.png";
+import Technotire from "../public/thumb/technotire.png";
 
 const products = [
   {
@@ -30,6 +31,7 @@ const products = [
     eventIncharge: "Vijeta Mishra",
     contactNumber: " 9971617120",
     emoji: "👔",
+    previewImage: Technotire,
   },
   {
     id: 1,

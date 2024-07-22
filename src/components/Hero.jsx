@@ -14,11 +14,7 @@ function Hero() {
               <img src={Logo} alt="my image" />
             </div> */}
             <div className="w-60">
-              {/* <img
-                src="https://media.discordapp.net/attachments/1264873364237975623/1264942528294293546/image.png?ex=669fb508&is=669e6388&hm=64f7b7eaae06e4668079afee414e7f606a43ad6aa6329408ecd5ad4f9345077e&=&format=webp&quality=lossless&width=452&height=437"
-                alt="my image"
-                className="mask mask-circle"
-              /> */}
+              <img src={NoBg} alt="my image" className="mask mask-circle" />
             </div>
           </div>
         </AnimationOnScroll>

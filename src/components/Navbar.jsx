@@ -33,7 +33,7 @@ function Navbar() {
   });
   function brochureDownload() {
     window.open(
-      "https://drive.google.com/file/d/1nfFasWViIZJvpvdJ9DTM6lwLue2gPcG1/view?usp=sharing"
+      "https://drive.google.com/file/d/1Coq7lmUBd7TzEOVKHzVHRfZJtuYcoEzQ/view?usp=sharing"
     );
   }
   return (
@@ -45,13 +45,13 @@ function Navbar() {
         transition: "all .5s ease-in-out",
       }}
     >
-      <div className="navbar bg-base-100 py-0">
+      <div className="py-0 navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -157,12 +157,12 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <a href="/" className="btn btn-ghost text-xl">
+          <a href="/" className="text-xl btn btn-ghost">
             BOT2K24
           </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="hidden navbar-center lg:flex">
+          <ul className="px-1 menu menu-horizontal">
             <li>
               <a href="#competitions">COMPETITIONS</a>
             </li>

@@ -22,7 +22,7 @@ function Team() {
         <TeamMember
           name="Medhansh"
           avatar="https://github.com/whirlxd.png"
-          title1="Site Developer"
+          title1="Vice President Robotics"
           title2="Vice President"
           github="https://github.com/whirlxd"
           twitter="https://twitter.com/whirlxd"
@@ -31,7 +31,7 @@ function Team() {
         <TeamMember
           name="Md.Arquam"
           avatar="https://avatar.iran.liara.run/public/boy"
-          title1="President"
+          title1="President Computers"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
@@ -39,7 +39,41 @@ function Team() {
         <TeamMember
           name="Md.Rayyan"
           avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Event Manager[AIFSG]"
+          title1="President Robotics"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+        <TeamMember
+          name="Samriddh Khanna"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="President Robotics"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+
+        <TeamMember
+          name="Ayaan Hashmi"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Vice President Robotics"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+
+        <TeamMember
+          name="Inesh Aggarwal"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Vice President Computers"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember>
+        <TeamMember
+          name="Vansh Bhardwaj"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Vice President Computers"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
@@ -47,85 +81,27 @@ function Team() {
         <TeamMember
           name="Aditya Das"
           avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Council Head"
+          title1="President Council"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
-        <TeamMember
-          name="Ayaan Hashmi"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Event Manager[CodeQuest]"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Aditya S. Verma"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Event Manager[DigiCombat]"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Pratham Singh"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Event Manager[DigiCombat]"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Samridh Khanna"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Robotics President"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Manara Naqvi"
-          avatar="https://avatar.iran.liara.run/public/girl"
-          title1="President"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Inesh Aggarwal"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="VP CS"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
-        <TeamMember
-          name="Vansh Bharadwaj"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="VP CS"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 24 24"
-            className="fill-current"
-          >
-            <path d="M10 13a5 5 0 0 1 0-7l1-1 1 1-1 1a3 3 0 0 0 0 4l2 2a3 3 0 0 0 4 0l1-1 1 1-1 1a5 5 0 0 1-7 0l-2-2zm4-11a5 5 0 0 1 5 5l-1 1-2-2 1-1a3 3 0 0 0-4-4l-2 2-1-1 2-2zm-4 18a5 5 0 0 1-5-5l1-1 2 2-1 1a3 3 0 0 0 4 4l2-2 1 1-2 2z" />
-          </svg>
-        </TeamMember>
         <TeamMember
           name="Abdullah Viqar"
           avatar="https://avatar.iran.liara.run/public/boy"
-          title1="VP CS"
+          title1="Volunteer"
           title2="Beta Tester"
           github="https://github.com/whirl21"
           twitter="https://twitter.com/whirl_21"
         ></TeamMember>
+        {/* <TeamMember
+          name="Vansh Sharma"
+          avatar="https://avatar.iran.liara.run/public/boy"
+          title1="Volunteer"
+          title2="Beta Tester"
+          github="https://github.com/whirl21"
+          twitter="https://twitter.com/whirl_21"
+        ></TeamMember> */}
       </div>
       <br></br>
       <br></br>

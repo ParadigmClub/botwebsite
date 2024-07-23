@@ -16,10 +16,10 @@ function Hero() {
             </div> */}
             <div className="w-60">
               <img
-                src={newLogo}
+                src={yLogo}
                 alt="my image"
                 className="mask mask-circle"
-                loading="lazy"
+                // loading="lazy"
               />
             </div>
           </div>

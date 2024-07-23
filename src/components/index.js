@@ -9,3 +9,6 @@ export { default as Footer } from "./Footer";
 export { default as Team } from "./Team";
 export { default as Stats } from "./Stats";
 export { default as Loader } from "./Loader";
+export { default as Brochure } from "./Brochure";
+export { default as Discord } from "./Discord";
+export { default as Register } from "./Register";

@@ -16,7 +16,7 @@ function Core() {
                 element={
                   <>
                     <Component.Navbar />
-                    <div className="homepage-container homepage-container bg-base-200">
+                    <div className="homepage-container bg-base-200">
                       <Component.Hero />
                       <Component.Bento />
                     </div>
@@ -37,6 +37,9 @@ function Core() {
 
               <Route path="/contact" element={<></>}></Route>
               <Route path="*" element={<Component.fourofour />} />
+              <Route path="/brochure" element={<Component.Brochure />} />
+              <Route path="/discord" element={<Component.Discord />} />
+              <Route path="/register" element={<Component.Register />} />
             </Routes>
           </div>
         </Router>

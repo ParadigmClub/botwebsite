@@ -3,6 +3,7 @@ import AnimationOnScroll from "react-animate-on-scroll";
 import products from "./products";
 function Competitions() {
   const [searchTerm, setSearchTerm] = useState("");
+
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -12,9 +13,9 @@ function Competitions() {
   {
     const isLastItemAlone = productsLength % 3 === 1;
     return (
-      <div className="container mx-auto px-6 py-8">
+      <div className="container px-6 py-8 mx-auto">
         <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
-          <h1 className="text-5xl font-bold text-center mb-8">Events</h1>
+          <h1 className="mb-8 text-5xl font-bold text-center">Events</h1>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="bounceInDown" animateOnce={true}>
           <input
@@ -22,10 +23,10 @@ function Competitions() {
             placeholder="🔎 Search events..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="input input-bordered w-full h-12 mb-8 align-middle text-center content-center justify-center items-center outline-zinc-400 hover:outline-dashed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 focus:ring-offset-primary-200"
+            className="items-center content-center justify-center w-full h-12 mb-8 text-center align-middle input input-bordered outline-zinc-400 hover:outline-dashed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 focus:ring-offset-primary-200"
           />
         </AnimationOnScroll>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           {filteredProducts.map((product, index) => (
             <div
               key={product.id}
@@ -53,7 +54,9 @@ function Competitions() {
     );
   }
 }
+
 function Card(props) {
+  const [isHovered, setIsHovered] = useState(false);
   const applyBlur = () => {
     document.body.style.filter = "blur(10px)";
   };
@@ -82,7 +85,7 @@ function Card(props) {
         <div className={isModalOpen ? "blur-background" : ""}></div>
         <a
           onClick={openModal}
-          className="group relative block h-64 sm:h-80 lg:h-96"
+          className="relative block h-64 group sm:h-80 lg:h-96"
         >
           <dialog
             id={props.title}
@@ -102,7 +105,7 @@ function Card(props) {
                 />
               </figure>
 
-              <div className="card-body items-center text-center">
+              <div className="items-center text-center card-body">
                 <h2 className="card-title">{props.title}</h2>
 
                 <p>
@@ -138,32 +141,40 @@ function Card(props) {
             </form>
           </dialog>
           {/* modal end */}
-          <span className="absolute inset-0 border-2 rounded-lg border-dashed border-white"></span>
+          <span className="absolute inset-0 border-2 border-white border-dashed rounded-lg"></span>
 
-          <div className="relative rounded-lg flex h-full transform items-end border-2  border-white bg-[#E2E4EA] transition-transform -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 ">
-            <div className="p-4 !pt-0 text-center justify-center items-center transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-              <h1 className="size-10 sm:size-5 mb-20">{props.emoji}</h1>
+          <div className="relative rounded-lg flex flex-col h-full transform border-2 border-white bg-[white] transition-transform -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 ">
+            {/* Image as a thumbnail at the top */}
+            {/* <img
+              src={
+                "https://cdn.discordapp.com/attachments/1159888188228259930/1265374836562329670/Untitled24_20240723235535.png?ex=66a147a6&is=669ff626&hm=99e84309f1c58d5f2ea933af393c861dce955b822bab9e2a498b903c4712f893&"
+              }
+              alt="Thumbnail"
+              className="object-cover w-full rounded-t-lg "
+              style={{ height: "200px" }}
+            /> */}
 
-              <h2 className="mt-4 text-xl text-black font-extrabold underline sm:text-2xl contrast-more text-center items-center justify-center">
+            <div
+              style={{
+                backgroundColor: `${isHovered ? "#0F1018" : "#3350E9"}`,
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="flex-grow p-4 !pt-0 text-center justify-center items-center transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 bg-green-400 "
+            >
+              <h2 className="items-center justify-center mt-4 text-xl font-extrabold text-center text-white underline sm:text-2xl contrast-more">
                 {props.title}
               </h2>
             </div>
 
-            <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-              <h3 className="mt-4 text-xl text-black font-medium sm:text-2xl">
+            <div className="absolute p-4 transition-opacity opacity-0 group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+              <h3 className="mt-4 text-xl font-medium text-black sm:text-2xl">
                 {props.title}
               </h3>
 
-              <p className="mt-4 text-sm text-black font-medium sm:text-base">
+              <p className="mt-4 text-sm font-medium text-black sm:text-base">
                 {props.description}
               </p>
-
-              <a
-                href={props.link}
-                className="mt-8 btn btn-filled btn-info font-bold hover:brightness-150"
-              >
-                Learn More
-              </a>
             </div>
           </div>
         </a>

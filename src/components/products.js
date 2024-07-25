@@ -10,11 +10,21 @@ import AI from "../public/thumb/ai.png";
 import Digi from "../public/thumb/digicombat.png";
 import Code from "../public/thumb/codequest.png";
 import Technotire from "../public/thumb/technotire.png";
+import aifsg from "../public/bult/aifsg.png";
+import ssurge from "../public/bult/ssurge.png";
+import cdquest from "../public/bult/cdquest.png";
+import tp from "../public/bult/tp.png";
+import notire from "../public/bult/notire.png";
+import lf from "../public/bult/lf.png";
+import dc from "../public/bult/dc.png";
+import mechdash from "../public/bult/mechdash.png";
+import qmb from "../public/bult/qmb.png";
+import techt from "../public/bult/techt.png";
 
 const products = [
   {
     id: 10,
-    name: "TechnoTire",
+    name: "Techno Tire",
     description:
       "Design a Flyer on the topic 'Future Innovations in Technology' using MS Word.",
     imageUrl: "https://via.placeholder.com/150",
@@ -32,6 +42,7 @@ const products = [
     contactNumber: " 9971617120",
     emoji: "👔",
     previewImage: Technotire,
+    newImage: notire,
   },
   {
     id: 1,
@@ -54,6 +65,7 @@ const products = [
     contactNumber: "9560874111",
     emoji: "🖨️",
     previewImage: Techprint,
+    newImage: tp,
   },
   {
     id: 2,
@@ -72,6 +84,7 @@ const products = [
     contactNumber: "9958995077",
     emoji: "🚀",
     previewImage: Techtrek,
+    newImage: techt,
   },
   {
     id: 3,
@@ -96,6 +109,7 @@ const products = [
     contactNumber: "9871422159",
     emoji: "🎨",
     previewImage: Logofusion,
+    newImage: lf,
   },
   {
     id: 4,
@@ -112,6 +126,7 @@ const products = [
     contactNumber: "9818667337",
     emoji: "🤖",
     previewImage: Mechadash,
+    newImage: mechdash,
   },
   {
     id: 5,
@@ -132,6 +147,7 @@ const products = [
     contactNumber: "9871422159",
     emoji: "🎮",
     previewImage: Sprite,
+    newImage: ssurge,
   },
   {
     id: 6,
@@ -159,6 +175,7 @@ const products = [
     contactNumber: "7506721367",
     emoji: "🧠",
     previewImage: AI,
+    newImage: aifsg,
   },
   {
     id: 7,
@@ -180,6 +197,7 @@ const products = [
     contactNumber: "9818667337",
     emoji: "🚗",
     previewImage: Mechabreak,
+    newImage: qmb,
   },
   {
     id: 8,
@@ -197,6 +215,7 @@ const products = [
     contactNumber: "9891435310",
     emoji: "🔫",
     previewImage: Digi,
+    newImage: dc,
   },
   {
     id: 9,
@@ -219,6 +238,7 @@ const products = [
     contactNumber: "9891435310/ 9818137177",
     emoji: "💻",
     previewImage: Code,
+    newImage: cdquest,
   },
 ];
 

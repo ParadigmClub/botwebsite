@@ -81,12 +81,12 @@ function Stats() {
     threshold: 0.5, // Trigger when 50% of the item is in view
   });
   return (
-    <div className="container items-center mx-auto overflow-hidden">
+    <div className="container items-center mx-auto overflow-hidden text-center">
       <div className="mb-10 shadow stats stats-vertical lg:stats-horizontal">
         <div className="stat place-items-center">
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <Counter value={90} start={inView} />
+            <Counter value={40} start={inView} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
             <div className="mt-1 stat-title">Schools Over NCR</div>

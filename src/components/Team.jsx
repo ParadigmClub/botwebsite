@@ -20,46 +20,52 @@ function Team() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 ">
         <TeamMember
-          name="Medhansh"
-          avatar="https://github.com/whirlxd.png"
-          title1="Vice President Robotics"
-          title2="Vice President"
-          github="https://github.com/whirlxd"
-          twitter="https://twitter.com/whirlxd"
-        ></TeamMember>
-
-        <TeamMember
           name="Md.Arquam"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://media.discordapp.net/attachments/1263063718917308530/1266051967294373888/image.png?ex=66a3be47&is=66a26cc7&hm=ec675e9208f18a4559382aadf81c09f3711ac526a5246a8fa33fb98ccfaef5a9&=&format=webp&quality=lossless&width=435&height=437"
           title1="President Computers"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://discord.com/users/864736437710487583"
+        ></TeamMember>
+        <TeamMember
+          name="Aditya Das"
+          avatar="https://media.discordapp.net/attachments/1139928732426059878/1266042869798670409/profile-pic.png?ex=66a3b5ce&is=66a2644e&hm=3b34836ac42b49e5305eb085b5fdd08e2e32f3da4a702293e6e943ff402f9eaa&=&format=webp&quality=lossless&width=437&height=437"
+          title1="President Council"
+          title2="Beta Tester"
+          github="https://instagram.com/_adityxa"
+          twitter="https://discord.com/users/1131499587442581564"
         ></TeamMember>
         <TeamMember
           name="Md.Rayyan"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://media.discordapp.net/attachments/1265966186265317398/1265966241911144493/IMG_20240310_164504_2.png?ex=66a36e70&is=66a21cf0&hm=86b2e4a8978587ef225fa3e503652d0b9303e5b211767c4670843327253e8557&=&format=webp&quality=lossless&width=378&height=437"
           title1="President Robotics"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://instagram.com/vedrecide"
+          twitter="https://github.com/vedrecide"
         ></TeamMember>
+
         <TeamMember
           name="Samriddh Khanna"
           avatar="https://avatar.iran.liara.run/public/boy"
           title1="President Robotics"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://instagram.com/samrridh.k "
+          twitter="https://instagram.com/samrridh.k "
         ></TeamMember>
-
+        <TeamMember
+          name="Medhansh"
+          avatar="https://media.discordapp.net/attachments/853630541571162132/1266113533599416482/sigma.png?ex=66a3f79d&is=66a2a61d&hm=83793b8d56584104d263fa31242db578ad74805617e2950609119166cac77c31&=&format=webp&quality=lossless&width=437&height=437"
+          title1="Vice President Robotics"
+          title2="Vice President"
+          github="https://instagram.com/whirlxd"
+          twitter="https://whirlxd.xyz"
+        ></TeamMember>
         <TeamMember
           name="Ayaan Hashmi"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://media.discordapp.net/attachments/1159509339426533428/1266092590147567668/profile-pic_2.png?ex=66a3e41c&is=66a2929c&hm=391195725904180eb3241ddc3c5bab892f6c38d3225582158e913016319e47cd&=&format=webp&quality=lossless&width=702&height=702"
           title1="Vice President Robotics"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://discord.com/users/951491358500216842"
+          twitter="https://github.com/ayaanhashmi08"
         ></TeamMember>
 
         <TeamMember
@@ -67,32 +73,25 @@ function Team() {
           avatar="https://avatar.iran.liara.run/public/boy"
           title1="Vice President Computers"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://instagram.com/inesh.agrawal.56"
+          twitter="https://instagram.com/inesh.agrawal.56"
         ></TeamMember>
         <TeamMember
           name="Vansh Bhardwaj"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://media.discordapp.net/attachments/1159888188228259930/1266063399205343282/440736818_1550812548798326_8362204039835113283_n.png?ex=66a3c8ec&is=66a2776c&hm=ac18c93327587ee59276a9f564c3b7d3dc6cba012c6999c9cbb871433966937b&=&format=webp&quality=lossless&width=702&height=702"
           title1="Vice President Computers"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://instagram.com/_vxnsh25"
+          twitter="https://open.spotify.com/user/l8mtiwbl6fv3jgwkjx0q9qj2t?si=ddw2_JsISgGojeNHJ5Ybjg&nd=1&dlsi=1b3ebe1c34ad4913"
         ></TeamMember>
-        <TeamMember
-          name="Aditya Das"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="President Council"
-          title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember>
+
         <TeamMember
           name="Abdullah Viqar"
-          avatar="https://avatar.iran.liara.run/public/boy"
-          title1="Volunteer"
+          avatar="https://cdn.discordapp.com/attachments/996737071802761266/1266063288169660466/IMG_2316.JPG?ex=66a3c8d2&is=66a27752&hm=944d39822d2e6f41d7bee8a759072932d13aab501f08aef1a0ba674783bff2cf&"
+          title1="VP Photography"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
+          github="https://www.instagram.com/abdullah.vqr/"
+          twitter="https://unsplash.com/@abdullahvqr"
         ></TeamMember>
         {/* <TeamMember
           name="Vansh Sharma"

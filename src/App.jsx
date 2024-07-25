@@ -24,6 +24,7 @@ function Core() {
                       <Component.Competitions />
                       <Component.Stats />
                     </section>
+
                     <section id="faq">
                       <Component.FAQ />
                     </section>
@@ -35,7 +36,14 @@ function Core() {
                 }
               ></Route>
 
-              <Route path="/contact" element={<></>}></Route>
+              <Route
+                path="/contact"
+                element={
+                  <>
+                    <Component.Events />
+                  </>
+                }
+              ></Route>
               <Route path="*" element={<Component.fourofour />} />
               <Route path="/brochure" element={<Component.Brochure />} />
               <Route path="/discord" element={<Component.Discord />} />

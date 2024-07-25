@@ -1,149 +1,116 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import "../styles/imagering.css";
 
 const ImageRing = () => {
-  const [xPos, setXPos] = useState(0);
+  const trackRef = useRef(null); // Reference to the track element
+  const [mouseDownAt, setMouseDownAt] = useState("0");
+  const [prevPercentage, setPrevPercentage] = useState(0);
+  const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
-    gsap
-      .timeline()
-      .set(".ring", { rotationY: 180, cursor: "grab" })
-      .set(".img", {
-        rotateY: (i) => i * -36,
-        transformOrigin: "50% 50% 500px",
-        z: -500,
-        backgroundImage: (i) =>
-          "url(https://picsum.photos/id/" + (i + 32) + "/600/400/)",
-        backgroundPosition: (i) => getBgPos(i),
-        backfaceVisibility: "hidden",
-      })
-      .from(".img", {
-        duration: 1.5,
-        y: 200,
-        opacity: 0,
-        stagger: 0.1,
-        ease: "expo",
-      })
-      .add(() => {
-        document.querySelectorAll(".img").forEach((img) => {
-          img.addEventListener("mouseenter", (e) => {
-            gsap.to(".img", {
-              opacity: (i, t) => (t === e.currentTarget ? 1 : 1),
-              ease: "power1",
-            });
-          });
-          img.addEventListener("mouseleave", () => {
-            gsap.to(".img", { opacity: 1, ease: "power2.inOut" });
-          });
-        });
-      }, "-=0.5");
-
-    const dragStart = (e) => {
-      let clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      setXPos(Math.round(clientX));
-      gsap.set(".ring", { cursor: "grabbing" });
-      document.addEventListener("mousemove", drag);
-      document.addEventListener("touchmove", drag);
+    const handleOnDown = (e) => {
+      setMouseDownAt(e.clientX || e.touches[0].clientX);
     };
 
-    const dragEnd = () => {
-      document.removeEventListener("mousemove", drag);
-      document.removeEventListener("touchmove", drag);
-      gsap.set(".ring", { cursor: "grab" });
+    const handleOnUp = () => {
+      setMouseDownAt("0");
+      setPrevPercentage(percentage);
     };
 
-    document.addEventListener("mousedown", dragStart);
-    document.addEventListener("touchstart", dragStart);
-    document.addEventListener("mouseup", dragEnd);
-    document.addEventListener("touchend", dragEnd);
+    const handleOnMove = (e) => {
+      if (mouseDownAt === "0") return;
 
-    function drag(e) {
-      const clientX = Math.round(e.clientX || e.touches[0].clientX);
-      let xPos = clientX;
-      const delta = (clientX - xPos) / 2; // Reduced sensitivity for slower scrolling
-      gsap.to(".ring", {
-        rotationY: "+=" + (delta % 360),
-        onUpdate: () => {
-          gsap.set(".img", { backgroundPosition: (i) => getBgPos(i) });
-        },
-      });
-    }
+      const mouseDelta =
+          parseFloat(mouseDownAt) - (e.clientX || e.touches[0].clientX),
+        maxDelta = window.innerWidth / 2;
 
-    function getBgPos(i) {
-      return (
-        100 -
-        (gsap.utils.wrap(
-          0,
-          360,
-          gsap.getProperty(".ring", "rotationY") - 180 - i * 36
-        ) /
-          360) *
-          125 +
-        "px 0px"
-      );
-    }
+      const nextPercentageUnconstrained =
+          prevPercentage + (mouseDelta / maxDelta) * -100,
+        nextPercentage = Math.max(
+          Math.min(nextPercentageUnconstrained, 0),
+          -100
+        );
+
+      setPercentage(nextPercentage);
+    };
+
+    const trackElement = trackRef.current;
+    trackElement.addEventListener("mousedown", handleOnDown);
+    trackElement.addEventListener("touchstart", handleOnDown);
+
+    trackElement.addEventListener("mouseup", handleOnUp);
+    trackElement.addEventListener("touchend", handleOnUp);
+
+    trackElement.addEventListener("mousemove", handleOnMove);
+    trackElement.addEventListener("touchmove", handleOnMove);
 
     return () => {
-      document.removeEventListener("mousedown", dragStart);
-      document.removeEventListener("touchstart", dragStart);
-      document.removeEventListener("mouseup", dragEnd);
-      document.removeEventListener("touchend", dragEnd);
-      document.removeEventListener("mousemove", drag);
-      document.removeEventListener("touchmove", drag);
-    };
-  }, []);
+      // Cleanup event listeners on component unmount
+      trackElement.removeEventListener("mousedown", handleOnDown);
+      trackElement.removeEventListener("touchstart", handleOnDown);
 
+      trackElement.removeEventListener("mouseup", handleOnUp);
+      trackElement.removeEventListener("touchend", handleOnUp);
+
+      trackElement.removeEventListener("mousemove", handleOnMove);
+      trackElement.removeEventListener("touchmove", handleOnMove);
+    };
+  }, [mouseDownAt, prevPercentage, percentage]);
+
+  // Apply styles or animations based on state
+  const transformStyle = {
+    transform: `translate(${percentage}%, -50%)`,
+  };
   return (
     <div className="events-section">
-      <div className="">
-        <div
-          className="stage"
-          style={{
-            width: "100%",
-            height: "100%",
-            overflow: "hidden",
-            background: "#000",
-          }}
-        >
-          <div
-            className="container --tw-ring-color: transparent;"
-            style={{
-              perspective: "2000px",
-              width: "300px",
-              height: "400px",
-              position: "absolute",
-              left: "50%",
-              top: "50%",
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            <div
-              className="ring ring-transparent ;"
-              style={{
-                width: "100%",
-                height: "100%",
-                position: "absolute",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              {[...Array(9)].map((_, i) => (
-                <a
-                  key={i}
-                  className="img --tw-ring-color: transparent;"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    position: "absolute",
-                    transformStyle: "preserve-3d",
-                    userSelect: "none",
-                    href: "https://picsum.photos/id/" + (i + 32) + "/600/400/",
-                  }}
-                ></a>
-              ))}
-            </div>
-          </div>
-        </div>
+      <div
+        id="image-track"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+        ref={trackRef}
+        style={transformStyle}
+      >
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1496753480864-3e588e0269b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80"
+          draggable="false"
+        />
+        <img
+          class="image"
+          src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          draggable="false"
+        />
       </div>
     </div>
   );

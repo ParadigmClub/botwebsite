@@ -46,6 +46,8 @@ function Competitions() {
                 duration={product.duration}
                 contactNumber={product.contactNumber}
                 emoji={product.emoji}
+                newImage={product.newImage}
+                incharge={product.eventIncharge}
               />
             </div>
           ))}
@@ -128,7 +130,8 @@ function Card(props) {
                 </p>
                 <ul>{props.judgmentCriteria}</ul>
                 <p className="text-center">
-                  <strong>Event Head Contact:</strong>{" "}
+                  <strong>Event Head Contact:</strong> Mrs.
+                  {props.incharge} -{" "}
                   <number className="text-[#77fb13] bold">
                     {props.contactNumber}
                   </number>
@@ -145,24 +148,25 @@ function Card(props) {
 
           <div className="relative rounded-lg flex flex-col h-full transform border-2 border-white bg-[white] transition-transform -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 ">
             {/* Image as a thumbnail at the top */}
-            {/* <img
+            <img
               src={
-                "https://cdn.discordapp.com/attachments/1159888188228259930/1265374836562329670/Untitled24_20240723235535.png?ex=66a147a6&is=669ff626&hm=99e84309f1c58d5f2ea933af393c861dce955b822bab9e2a498b903c4712f893&"
+                props.newImage ||
+                `https://dummyimage.com/420x260&text=` + props.title + ``
               }
               alt="Thumbnail"
               className="object-cover w-full rounded-t-lg "
-              style={{ height: "200px" }}
-            /> */}
+              style={{ height: "200px", width: "100%" }}
+            />
 
             <div
               style={{
-                backgroundColor: `${isHovered ? "#0F1018" : "#3350E9"}`,
+                backgroundColor: `${isHovered ? "#0F1018" : "#0F1018"}`,
               }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="flex-grow p-4 !pt-0 text-center justify-center items-center transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 bg-green-400 "
+              className="flex-grow p-4 !pt-0 text-center justify-center items-center transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 bg-green-400 rounded-b-lg "
             >
-              <h2 className="items-center justify-center mt-4 text-xl font-extrabold text-center text-white underline sm:text-2xl contrast-more">
+              <h2 className="flex items-center justify-center flex-grow mt-4 text-xl font-extrabold text-center text-white sm:text-2xl contrast-more">
                 {props.title}
               </h2>
             </div>

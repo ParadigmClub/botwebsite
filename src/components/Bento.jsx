@@ -135,10 +135,12 @@ function Bento() {
             <AnimationOnScroll animateIn="slideInDown" animateOnce={true}>
               <img
                 className="rounded"
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",
                   objectFit: "cover", // Logo Fusion
+                  scale: "105%",
                 }}
                 src={LogoFusion}
               ></img>
@@ -163,6 +165,7 @@ function Bento() {
             <AnimationOnScroll animateIn="slideInDown" animateOnce={true}>
               <img
                 className="rounded "
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -192,6 +195,7 @@ function Bento() {
             <AnimationOnScroll animateIn="zoomIn" animateOnce={true}>
               <img
                 className="rounded "
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -219,6 +223,7 @@ function Bento() {
             <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
               <img
                 className="rounded "
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -251,6 +256,7 @@ function Bento() {
             >
               <img
                 className="rounded "
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",
@@ -284,6 +290,7 @@ function Bento() {
             >
               <img
                 className="rounded "
+                loading="lazy"
                 style={{
                   height: "100%",
                   width: "100%",

@@ -222,7 +222,8 @@ function Bento() {
           >
             <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
               <img
-                className="rounded "
+                className="rounded mt-2 "
+                
                 loading="lazy"
                 style={{
                   height: "100%",

@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
 import Typewriter from "typewriter-effect";
 import Logo from "../logo.jpg";
 import NoBg from "../public/botlogbg.png";
 import newLogo from "../public/botnewlogo.webp";
 import yLogo from "../public/botnewlogoyellow.webp";
+import Loader from './Loader'
 function Hero() {
+  
   return (
     <div className="min-h-screen hero bg-base-200">
       <div className="text-center align-center">
+       
         <AnimationOnScroll animateIn="fadeInDownBig" animateOnce={true}>
+
           <div className="avatar">
-            {/* <div className="w-48 mask mask-circle">
-              <img src={Logo} alt="my image" />
-            </div> */}
+      
             <div className="w-60">
               <img
                 src={yLogo}
@@ -22,8 +24,12 @@ function Hero() {
                 // loading="lazy"
               />
             </div>
+            
           </div>
+      
         </AnimationOnScroll>
+       
+
         <div className="text-center hero-content">
           <div className="max-w-md">
             <AnimationOnScroll animateIn="fadeInUp" animateOnce={true}>
@@ -42,7 +48,8 @@ function Hero() {
 
                     .changeDelay(16)
                     .typeString(
-                      "A Technical Fest Organized By Mayoor School Noida Celebrating Innovation And Creativity"
+                      `A Tech Fest Organized By Mayoor School, Noida 
+                      Celebrating Innovation And Creativity`
                     )
 
                     .start();
@@ -51,7 +58,7 @@ function Hero() {
             </p>
 
             <div className="grid-cols-2 grid-rows-1 gap-6 rid">
-              <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true}>
+              <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true} offset={0}>
                 <a
                   href="#competitions"
                   className="mb-2 btn btn-outline btn-warning btn-wide "
@@ -62,7 +69,7 @@ function Hero() {
               <AnimationOnScroll
                 animateIn="fadeInLeftBig"
                 animateOnce={true}
-                offset={100}
+                offset={50}
               >
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfoIp-3erOri72MpCI5F-jYFvS9XLNLS-De2aWW3ywQeBk65Q/viewform"

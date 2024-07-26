@@ -50,7 +50,7 @@ const products = [
     description:
       "Design a Flyer on the topic 'Future Innovations in Technology' using MS Word.",
     imageUrl: "https://via.placeholder.com/150",
-    mode: "Online(Round 1)/Offline(Round 2)",
+    mode: "Online(Round 1)[30 JULY]/ Offline (Round 2)",
     domain: "Classes III & IV",
     participants: "2 (one from each class)",
     theme: "Future Innovations in Technology",
@@ -133,7 +133,7 @@ const products = [
     name: "Sprite Surge",
     description: "Create a story on 'Cyber City Adventures' using Scratch.",
     imageUrl: "https://via.placeholder.com/150",
-    mode: "Online",
+    mode: "Online [Aug 3]",
     domain: "Classes VI-VIII",
     participants: "2",
     theme: "Cyber City Adventures",

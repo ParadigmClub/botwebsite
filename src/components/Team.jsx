@@ -8,13 +8,9 @@ function Team() {
         <div className="text-center hero-content">
           <div className="max-w-md">
             <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
-              <h1 className="mt-10 text-5xl font-bold">Our Team</h1>
+              <h1 className="mt-10 mb-10 text-5xl font-bold">Our Team</h1>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="fadeInUp" animateOnce={true}>
-              <p className="py-6 mb-5">
-                The Ones who made it happen behind the scenes
-              </p>
-            </AnimationOnScroll>
+      
           </div>
         </div>
       </div>
@@ -36,7 +32,7 @@ function Team() {
         ></TeamMember>
         <TeamMember
           name="Md.Rayyan"
-          avatar="https://media.discordapp.net/attachments/1265966186265317398/1265966241911144493/IMG_20240310_164504_2.png?ex=66a36e70&is=66a21cf0&hm=86b2e4a8978587ef225fa3e503652d0b9303e5b211767c4670843327253e8557&=&format=webp&quality=lossless&width=378&height=437"
+          avatar="https://media.discordapp.net/attachments/1265966186265317398/1266256419267809300/profile-pic.png?ex=66a47cb0&is=66a32b30&hm=c1cf56008a22b5ef8e8ea1c178981db9ec86a0532bd6b12fd474891799ce94de&=&format=webp&quality=lossless&width=350&height=350"
           title1="President Robotics"
           title2="Beta Tester"
           github="https://instagram.com/vedrecide"
@@ -45,14 +41,14 @@ function Team() {
 
         <TeamMember
           name="Samriddh Khanna"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://avatar.iran.liara.run/public/17"
           title1="President Robotics"
           title2="Beta Tester"
           github="https://instagram.com/samrridh.k "
           twitter="https://instagram.com/samrridh.k "
         ></TeamMember>
         <TeamMember
-          name="Medhansh"
+          name="Medhansh Kapoor"
           avatar="https://media.discordapp.net/attachments/853630541571162132/1266113533599416482/sigma.png?ex=66a3f79d&is=66a2a61d&hm=83793b8d56584104d263fa31242db578ad74805617e2950609119166cac77c31&=&format=webp&quality=lossless&width=437&height=437"
           title1="Vice President Robotics"
           title2="Vice President"
@@ -70,7 +66,7 @@ function Team() {
 
         <TeamMember
           name="Inesh Aggarwal"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://avatar.iran.liara.run/public/17"
           title1="Vice President Computers"
           title2="Beta Tester"
           github="https://instagram.com/inesh.agrawal.56"
@@ -88,19 +84,26 @@ function Team() {
         <TeamMember
           name="Abdullah Viqar"
           avatar="https://cdn.discordapp.com/attachments/996737071802761266/1266063288169660466/IMG_2316.JPG?ex=66a3c8d2&is=66a27752&hm=944d39822d2e6f41d7bee8a759072932d13aab501f08aef1a0ba674783bff2cf&"
-          title1="VP Photography"
+          title1="Vice President Photography"
           title2="Beta Tester"
           github="https://www.instagram.com/abdullah.vqr/"
           twitter="https://unsplash.com/@abdullahvqr"
         ></TeamMember>
-        {/* <TeamMember
+         <TeamMember
           name="Vansh Sharma"
-          avatar="https://avatar.iran.liara.run/public/boy"
+          avatar="https://avatar.iran.liara.run/public/36"
           title1="Volunteer"
           title2="Beta Tester"
-          github="https://github.com/whirl21"
-          twitter="https://twitter.com/whirl_21"
-        ></TeamMember> */}
+          github="https://www.instagram.com/vansh_sharma1144"
+        ></TeamMember>
+        <TeamMember
+          name="Ranjana Ma'am"
+          avatar="https://avatar.iran.liara.run/public/job/teacher/female"
+          title1="HOD Computers"
+
+          github="https://wa.me/9891435310"
+          twitter="tel:9891435310"
+        ></TeamMember>
       </div>
       <br></br>
       <br></br>
@@ -127,6 +130,7 @@ function TeamMember(props) {
                     src={props.avatar}
                     alt="Avatar"
                     className="bg-transparent mask mask-decagon "
+                    loading="lazy"
                   />
                 </div>
               </div>

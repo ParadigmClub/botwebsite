@@ -130,7 +130,7 @@ function Card(props) {
                 </p>
                 <ul>{props.judgmentCriteria}</ul>
                 <p className="text-center">
-                  <strong>Event Head Contact:</strong> Mrs.
+                  <strong>Event Head Contact:</strong> Ms.
                   {props.incharge} -{" "}
                   <number className="text-[#77fb13] bold">
                     {props.contactNumber}
@@ -171,7 +171,7 @@ function Card(props) {
               </h2>
             </div>
 
-            <div className="absolute p-4 transition-opacity duration-0 opacity-0 group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+            <div className="absolute p-4 transition-opacity opacity-0 duration-0 group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
               <h3 className="mt-4 text-xl font-medium text-black sm:text-2xl">
                 {props.title}
               </h3>

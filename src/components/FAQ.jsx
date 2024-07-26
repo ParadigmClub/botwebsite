@@ -14,7 +14,7 @@ const FAQ = () => {
       <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2">
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
           <Question
-            question="Why should you participate"
+            question="Why should you participate?"
             answer="Battle Of Titans is a platform for students to showcase their skills and talents. It is a great opportunity for students to learn and grow. "
           />
         </AnimationOnScroll>
@@ -26,26 +26,26 @@ const FAQ = () => {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
           <Question
-            question="What are the dates?"
-            answer="The event will take place on 8th august in school premises itself. Participants are requested to check dates for prelims of competitions beforehand"
+            question="What are the event dates?"
+            answer="The event is scheduled for August 8th and will be held on the school premises. Participants are advised to verify the dates for preliminary rounds of the competitions in advance."
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
           <Question
-            question="Are all events offline?"
-            answer="NO, Majority of the events will take place offline however AIFSG ,Sprite Surge & Tech print will have online rounds"
+            question="Will all events be conducted offline?"
+            answer="No, while the majority of events will be conducted offline, AIFSG, Sprite Surge, and Tech Print will include online rounds."
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInLeft" animateOnce={true}>
           <Question
-            question="Who are eligible to take part"
-            answer="All students corresponding to their age group are allowed to take part in representing their school for this mega event"
+            question="Who is eligible to participate?"
+            answer="All students within the specified age groups are eligible to represent their schools in this major event."
           />
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="slideInRight" animateOnce={true}>
           <Question
-            question="Can i register privately?"
-            answer="NO. Private registrations are not allowed ,your school must register you"
+            question="Can I register independently?"
+            answer="No, independent registrations are not allowed. Your school must complete the registration on your behalf."
           />
         </AnimationOnScroll>
       </div>

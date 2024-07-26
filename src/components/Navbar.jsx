@@ -75,7 +75,7 @@ function Navbar() {
                 <a>SOCIALS</a>
                 <ul className="p-2">
                   <li>
-                    <a href="https://discord.gg/RC3wxVetdk" target="_blank">
+                    <a href="https://discord.com/invite/Ghcq5h4Dsw" target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -175,7 +175,7 @@ function Navbar() {
                 <summary>SOCIALS</summary>
                 <ul className="p-2">
                   <li>
-                    <a href="https://discord.gg/RC3wxVetdk" target="_blank">
+                    <a href="https://discord.com/invite/Ghcq5h4Dsw" target="_blank">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"

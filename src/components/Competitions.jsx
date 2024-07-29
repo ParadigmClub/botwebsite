@@ -166,12 +166,12 @@ function Card(props) {
               onMouseLeave={() => setIsHovered(false)}
               className="flex-grow p-4 !pt-0 text-center justify-center items-center transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8 bg-green-400 rounded-b-lg "
             >
-              <h2 className="flex items-center justify-center flex-grow mt-4 text-xl font-extrabold text-center text-white sm:text-2xl contrast-more hover:opacity-0">
+              <h2 className="flex items-center justify-center flex-grow mt-4 text-xl font-extrabold text-center text-white transition-opacity sm:text-2xl contrast-more hover:opacity-0 duration-0">
                 {props.title}
               </h2>
             </div>
 
-            <div className="absolute p-4 transition-opacity opacity-0 duration-0 group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+            <div className="absolute p-4 transition-opacity duration-100 opacity-0 group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
               <h3 className="mt-4 text-xl font-medium text-black sm:text-2xl">
                 {props.title}
               </h3>

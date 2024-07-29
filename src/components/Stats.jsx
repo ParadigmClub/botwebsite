@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useInView } from "react-intersection-observer";
 import AnimationOnScroll from "react-animate-on-scroll";
@@ -75,38 +75,53 @@ function Number({ mv, number }) {
 }
 
 function Stats() {
-  const { ref, inView } = useInView({
-    /* Optional: Adjust the trigger point */
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.5, // Trigger when 50% of the item is in view
-  });
+  const [participants, setParticipants] = useState(400);
+  const [schools, setSchools] = useState(30);
+  const [events, setEvents] = useState(9);
+  const handleMouseE = () => {
+    // Update the number of participants on hover
+    setSchools(40);
+  };
+  const handleMouse = () => {
+    // Update the number of participants on hover
+    setEvents(10);
+  };
+
+  const handleMouseEnter = () => {
+    // Update the number of participants on hover
+    setParticipants(450);
+  };
+
   return (
     <div className="container items-center mx-auto overflow-hidden text-center">
       <div className="mb-10 shadow stats stats-vertical lg:stats-horizontal">
-        <div className="stat place-items-center">
+        <div className="stat place-items-center" onMouseEnter={handleMouseE}>
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
-            <Counter value={40} start={inView} />
+            <Counter value={schools} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
             <div className="mt-1 stat-title">Schools Over NCR</div>
           </AnimationOnScroll>
         </div>
 
-        <div className="stat place-items-center">
+        <div className="stat place-items-center" onMouseEnter={handleMouse}>
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
-            <Counter value={10} start={inView} />
+            <Counter value={events} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
             <div className="mt-1 stat-title">Mega Events</div>
           </AnimationOnScroll>
         </div>
 
-        <div className="stat place-items-center">
+        <div
+          className="stat place-items-center"
+          onMouseEnter={handleMouseEnter}
+        >
           {/* Ensure Counter starts based on inView for all stats */}
           <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true}>
-            <Counter value={900} start={inView} />
+            <Counter value={participants} />
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="fadeInLeftBig" animateOnce={true}>
             <div className="mt-1 stat-title">Participants</div>

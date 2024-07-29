@@ -12,6 +12,8 @@ import Ayaan from "../public/pics/ayaan.webp";
 
 import Arquam from "../public/pics/arqm.webp";
 import Rayyan from "../public/pics/rayyan.webp";
+import vanshsharama from "../public/pics/vanshsharma.png";
+import vansh from "../public/pics/vansh.png";
 
 function Team() {
   return (
@@ -84,7 +86,7 @@ function Team() {
         ></TeamMember>
         <TeamMember
           name="Vansh Bhardwaj"
-          avatar="https://avatar.iran.liara.run/public/34"
+          avatar={vansh}
           title1="Vice President Computers"
           title2="Beta Tester"
           github="https://instagram.com/_vxnsh25"
@@ -101,7 +103,7 @@ function Team() {
         ></TeamMember>
         <TeamMember
           name="Vansh Sharma"
-          avatar="https://avatar.iran.liara.run/public/36"
+          avatar={vanshsharama}
           title1="Volunteer"
           title2="Beta Tester"
           github="https://www.instagram.com/vansh_sharma1144"

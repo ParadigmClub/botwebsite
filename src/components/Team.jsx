@@ -1,8 +1,18 @@
 import React from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
 import "../styles/team.css";
-import Aditya from "../public/pics/aditya.png";
+import Aditya from "../public/pics/aditya.webp";
 import Samriddh from "../public/pics/samriddh.png";
+import Medhansh from "../public/pics/medhansh.png";
+import Inesh from "../public/pics/inesh.png";
+
+import Abdullah from "../public/pics/abdullah.webp";
+
+import Ayaan from "../public/pics/ayaan.webp";
+
+import Arquam from "../public/pics/arqm.webp";
+import Rayyan from "../public/pics/rayyan.webp";
+
 function Team() {
   return (
     <div className="bg-base-100">
@@ -18,14 +28,14 @@ function Team() {
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 ">
         <TeamMember
           name="Md.Arquam"
-          avatar="https://media.discordapp.net/attachments/1264873364237975623/1266489475727622174/image.png?ex=66a555bd&is=66a4043d&hm=188ceb5668af1a0eaaac253a97ce79ddb67a73503706d8c78496f0a2cbf99d69&=&format=webp&quality=lossless&width=621&height=628"
+          avatar={Arquam}
           title1="President Computers"
           title2="Beta Tester"
           github="https://discord.com/users/864736437710487583"
         ></TeamMember>
         <TeamMember
           name="Aditya Das"
-          avatar="https://media.discordapp.net/attachments/1264873364237975623/1266485881926062150/image.png?ex=66a55264&is=66a400e4&hm=e724a12c9c978139181dc98f9d523ad5f3d818eae6a980c8dad9e47157b03d50&=&format=webp&quality=lossless&width=433&height=437"
+          avatar={Aditya}
           title1="President Council"
           title2="Beta Tester"
           github="https://instagram.com/_adityxa"
@@ -33,24 +43,23 @@ function Team() {
         ></TeamMember>
         <TeamMember
           name="Md.Rayyan"
-          avatar="https://media.discordapp.net/attachments/1264873364237975623/1266492848757542912/image.png?ex=66a558e1&is=66a40761&hm=8e3f1250d9eb6b31462649ceb6526339afb41c730c24a751456452eb596247e8&=&format=webp&quality=lossless&width=348&height=437"
-          title1="President Robotics"
+          avatar={Rayyan}
           title2="Beta Tester"
           github="https://instagram.com/vedrecide"
           twitter="https://github.com/vedrecide"
         ></TeamMember>
 
         <TeamMember
-          name="Samriddh Khanna"
+          name="Samrridh Khanna"
           avatar={Samriddh}
           title1="President Robotics"
           title2="Beta Tester"
           github="https://instagram.com/samrridh.k "
-          twitter="https://instagram.com/samrridh.k "
+          twitter="https://www.linkedin.com/in/samrridh-khanna "
         ></TeamMember>
         <TeamMember
           name="Medhansh Kapoor"
-          avatar="https://media.discordapp.net/attachments/1264873364237975623/1266487388360937482/image.png?ex=66a553cb&is=66a4024b&hm=7fcbf556bd0121d619a78d90cafa1e5fb5de674efbb49b5d7e66976bbc366d90&=&format=webp&quality=lossless&width=521&height=476&"
+          avatar={Medhansh}
           title1="Vice President Robotics"
           title2="Vice President"
           github="https://instagram.com/whirlxd"
@@ -58,7 +67,7 @@ function Team() {
         ></TeamMember>
         <TeamMember
           name="Ayaan Hashmi"
-          avatar="https://media.discordapp.net/attachments/1159509339426533428/1266092590147567668/profile-pic_2.png?ex=66a5359c&is=66a3e41c&hm=b92f4c34f244e9f271e51cbefed1976dd4dd15c1f4e9108c0323bb243c391ec4&=&format=webp&quality=lossless&width=702&height=702"
+          avatar={Ayaan}
           title1="Vice President Robotics"
           title2="Beta Tester"
           github="https://discord.com/users/951491358500216842"
@@ -67,7 +76,7 @@ function Team() {
 
         <TeamMember
           name="Inesh Aggarwal"
-          avatar="https://media.discordapp.net/attachments/1264873364237975623/1266471226461651077/PHOTO-2024-07-25-22-49-26.jpg?ex=66a544be&is=66a3f33e&hm=6e908a766c379b9dd7c32926f763f199c70377af3ecfa04f507dfab69b3b6d71&=&format=webp&width=372&height=437"
+          avatar={Inesh}
           title1="Vice President Computers"
           title2="Beta Tester"
           github="https://instagram.com/inesh.agrawal.56"
@@ -84,7 +93,7 @@ function Team() {
 
         <TeamMember
           name="Abdullah Viqar"
-          avatar="https://media.discordapp.net/attachments/996737071802761266/1266063288169660466/IMG_2316.JPG?ex=66a51a52&is=66a3c8d2&hm=61b86367b3ef8843e1c74641b2b52ff65752b89be69f696ef45240fa2cfe0b9e&=&format=webp&width=702&height=702"
+          avatar={Abdullah}
           title1="Vice President Photography"
           title2="Beta Tester"
           github="https://www.instagram.com/abdullah.vqr/"

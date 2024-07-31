@@ -84,14 +84,7 @@ function Team() {
           github="https://instagram.com/_vxnsh25"
           twitter="https://open.spotify.com/user/l8mtiwbl6fv3jgwkjx0q9qj2t?si=ddw2_JsISgGojeNHJ5Ybjg&nd=1&dlsi=1b3ebe1c34ad4913"
         ></TeamMember>
-        <TeamMember
-          name="Inesh Aggarwal"
-          avatar={Inesh}
-          title1="Vice President Computers"
-          title2="Beta Tester"
-          github="https://instagram.com/inesh.agrawal.56"
-          twitter="https://instagram.com/inesh.agrawal.56"
-        ></TeamMember>
+    
 
         <TeamMember
           name="Abdullah Viqar"

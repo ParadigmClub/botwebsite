@@ -46,6 +46,7 @@ function Team() {
         <TeamMember
           name="Md.Rayyan"
           avatar={Rayyan}
+          title1="President Robotics"
           title2="Beta Tester"
           github="https://instagram.com/vedrecide"
           twitter="https://github.com/vedrecide"
@@ -75,15 +76,6 @@ function Team() {
           github="https://discord.com/users/951491358500216842"
           twitter="https://github.com/ayaanhashmi08"
         ></TeamMember>
-
-        <TeamMember
-          name="Inesh Aggarwal"
-          avatar={Inesh}
-          title1="Vice President Computers"
-          title2="Beta Tester"
-          github="https://instagram.com/inesh.agrawal.56"
-          twitter="https://instagram.com/inesh.agrawal.56"
-        ></TeamMember>
         <TeamMember
           name="Vansh Bhardwaj"
           avatar={vansh}
@@ -91,6 +83,14 @@ function Team() {
           title2="Beta Tester"
           github="https://instagram.com/_vxnsh25"
           twitter="https://open.spotify.com/user/l8mtiwbl6fv3jgwkjx0q9qj2t?si=ddw2_JsISgGojeNHJ5Ybjg&nd=1&dlsi=1b3ebe1c34ad4913"
+        ></TeamMember>
+        <TeamMember
+          name="Inesh Aggarwal"
+          avatar={Inesh}
+          title1="Vice President Computers"
+          title2="Beta Tester"
+          github="https://instagram.com/inesh.agrawal.56"
+          twitter="https://instagram.com/inesh.agrawal.56"
         ></TeamMember>
 
         <TeamMember

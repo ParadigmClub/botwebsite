@@ -7,7 +7,9 @@ const FAQ = () => {
       <div className="">
         <div className="">
           <div className="">
-            <h1 className="mb-10 text-5xl font-bold text-center">F-A-Q</h1>
+            <AnimationOnScroll animateIn="fadeInDown" animateOnce={true}>
+              <h1 className="mb-10 text-5xl font-bold text-center">F-A-Q</h1>
+            </AnimationOnScroll>
           </div>
         </div>
       </div>

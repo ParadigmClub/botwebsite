@@ -84,7 +84,6 @@ function Team() {
           github="https://instagram.com/_vxnsh25"
           twitter="https://open.spotify.com/user/l8mtiwbl6fv3jgwkjx0q9qj2t?si=ddw2_JsISgGojeNHJ5Ybjg&nd=1&dlsi=1b3ebe1c34ad4913"
         ></TeamMember>
-    
 
         <TeamMember
           name="Abdullah Viqar"
@@ -121,7 +120,7 @@ function TeamMember(props) {
       className="items-center gap-4 px-10 pt-1 pb-10 overflow-x-scroll overflow-y-hidden scr xl:grid xl:overflow-x-auto xl:px-4"
     >
       <AnimationOnScroll
-        animateIn="jackInTheBox"
+        animateIn="slideInUp"
         animateOnce={true}
         className="overflow-hidden"
       >

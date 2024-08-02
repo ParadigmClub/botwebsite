@@ -1,7 +1,8 @@
 # Battle Of Titans 2K24
 
-for future maintainers
-this site has been created using the following technologies:
+~<i>for future maintainers</i>~
+<br>
+This site has been created using the following technologies:
 
 - Reactjs
 - Tailwind
@@ -9,4 +10,22 @@ this site has been created using the following technologies:
 - Heroicons
 - Vite
 
-just use it like a normal react app and it should work , make sure to have everything downloaded tho
+## Installation
+
+```bash
+npm install
+```
+
+## Usage
+
+```bash
+npm run dev
+```
+
+## License
+
+Code Belong to me and me only 😎 since this is a private repo
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

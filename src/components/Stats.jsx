@@ -76,20 +76,32 @@ function Number({ mv, number }) {
 
 function Stats() {
   const [participants, setParticipants] = useState(400);
-  const [schools, setSchools] = useState(30);
-  const [events, setEvents] = useState(9);
+  const [schools, setSchools] = useState(40);
+  const [events, setEvents] = useState(10);
   const handleMouseE = () => {
     // Update the number of participants on hover
-    setSchools(40);
+    setSchools(30);
+    // wait for one second and then update the number of participants
+    setTimeout(() => {
+      setSchools(40);
+    }, 100);
   };
   const handleMouse = () => {
     // Update the number of participants on hover
-    setEvents(10);
+    setEvents(1);
+    // wait for one second and then update the number of participants
+    setTimeout(() => {
+      setEvents(10);
+    }, 100);
   };
 
   const handleMouseEnter = () => {
     // Update the number of participants on hover
-    setParticipants(450);
+    setParticipants(350);
+    // wait for one second and then update the number of participants
+    setTimeout(() => {
+      setParticipants(400);
+    }, 100);
   };
 
   return (

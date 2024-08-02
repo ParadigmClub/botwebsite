@@ -1,34 +1,28 @@
 import React, { useState, useEffect } from "react";
 import AnimationOnScroll from "react-animate-on-scroll";
+import { Suspense, lazy } from "react";
 import Typewriter from "typewriter-effect";
-import Logo from "../logo.jpg";
-import NoBg from "../public/botlogbg.png";
-import newLogo from "../public/botnewlogo.webp";
+
 import yLogo from "../public/botnewlogoyellow.webp";
-import Loader from './Loader'
+const Loader = lazy(() => import("./Loader"));
 function Hero() {
-  
   return (
     <div className="min-h-screen hero bg-base-200">
       <div className="text-center align-center">
-       
-        <AnimationOnScroll animateIn="fadeInDownBig" animateOnce={true}>
-
-          <div className="avatar">
-      
-            <div className="w-60">
-              <img
-                src={yLogo}
-                alt="my image"
-                className="mask mask-circle"
-                // loading="lazy"
-              />
+        <Suspense fallback={<Loader />}>
+          <AnimationOnScroll animateIn="fadeInDownBig" animateOnce={true}>
+            <div className="avatar">
+              <div className="w-60">
+                <img
+                  src={yLogo}
+                  alt="my image"
+                  className="mask mask-circle"
+                  // loading="lazy"
+                />
+              </div>
             </div>
-            
-          </div>
-      
-        </AnimationOnScroll>
-       
+          </AnimationOnScroll>
+        </Suspense>
 
         <div className="text-center hero-content">
           <div className="max-w-md">
@@ -46,10 +40,9 @@ function Hero() {
                 onInit={(typewriter) => {
                   typewriter
 
-                    .changeDelay(16)
+                    .changeDelay(10)
                     .typeString(
-                      `A Tech Fest Organized By Mayoor School, Noida 
-                      Celebrating Innovation And Creativity`
+                      `A Tech Fest Organized By Mayoor School,Noida Celebrating Innovation And Creativity`
                     )
 
                     .start();
@@ -58,7 +51,11 @@ function Hero() {
             </p>
 
             <div className="grid-cols-2 grid-rows-1 gap-6 rid">
-              <AnimationOnScroll animateIn="fadeInRightBig" animateOnce={true} offset={0}>
+              <AnimationOnScroll
+                animateIn="fadeInRightBig"
+                animateOnce={true}
+                offset={0}
+              >
                 <a
                   href="#competitions"
                   className="mb-2 btn btn-outline btn-warning btn-wide "

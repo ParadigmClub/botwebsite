@@ -12,3 +12,4 @@ export { default as Loader } from "./Loader";
 export { default as Brochure } from "./Brochure";
 export { default as Discord } from "./Discord";
 export { default as Register } from "./Register";
+export { default as Results } from "./Results";

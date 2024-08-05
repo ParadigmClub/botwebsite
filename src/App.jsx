@@ -48,6 +48,15 @@ function Core() {
               <Route path="/brochure" element={<Component.Brochure />} />
               <Route path="/discord" element={<Component.Discord />} />
               <Route path="/register" element={<Component.Register />} />
+              <Route
+                path="/results"
+                element={
+                  <>
+                    <Component.Navbar />
+                    <Component.Results />{" "}
+                  </>
+                }
+              />
             </Routes>
           </div>
         </Router>

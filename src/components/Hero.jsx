@@ -69,11 +69,11 @@ function Hero() {
                 offset={50}
               >
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfoIp-3erOri72MpCI5F-jYFvS9XLNLS-De2aWW3ywQeBk65Q/viewform"
+                  href="/results"
                   className="mt-2 btn btn-outline btn-info btn-wide"
                   target="_blank"
                 >
-                  Registration
+                  Result(s)
                 </a>
               </AnimationOnScroll>
             </div>

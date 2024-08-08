@@ -262,24 +262,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <Countdown
-            date={new Date(1723088150 * 1000)}
-            renderer={({ days, hours }) => (
-              <>
-                <div
-                  className="text[#A3FF00]"
-                  style={{
-                    textAlign: "center",
-                    color: "#A3FF00",
-                  }}
-                >
-                  {days} Days to go
-                </div>
-                <br></br>
-              </>
-            )}
-          />
+        <div className="navbar-end text-[#a3ff00]">
+          RESULTS OUT!!
           {""}
         </div>
       </div>

@@ -89,10 +89,10 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  Sommervile Noida
+                  Sommerville Noida
                   <br />
                 </td>
-                <td>MCS,Jodhpur</td>
+                <td>Mayoor Chopasni School,Jodhpur</td>
 
                 <td>Mayoor School Noida</td>
               </tr>
@@ -114,12 +114,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  Mayoor Chopasni School , Jodhpur
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Mayo College , Ajmer & MSN</td>
 
-                <td>TBA</td>
+                <td>Modern School , Noida</td>
               </tr>
               <tr>
                 <th>
@@ -142,12 +142,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  Ryan International ,MV & MSN
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Pragyan School , Greater Noida</td>
 
-                <td>TBA</td>
+                <td>Mayoor Chopasni School ,Jodhpur</td>
               </tr>
               <tr>
                 <th>
@@ -167,12 +167,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  Mayoor Chopasni School , Jodhpur
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Sommerville School Noida</td>
 
-                <td>TBA</td>
+                <td>Sarvottam International & MSN</td>
               </tr>
               <tr>
                 <th>
@@ -195,12 +195,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  Sommerville School Noida & MSN
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Jaypee Public School </td>
 
-                <td>TBA</td>
+                <td>Mayoor Chopasani School , Jodhpur</td>
               </tr>
               <tr>
                 <th>
@@ -223,12 +223,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  ASPAM Scottish , Noida
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Vivekanand School , Preet Vihar & MSN</td>
 
-                <td>TBA</td>
+                <td>Mayoor Chopasni School , Jodhpur</td>
               </tr>
               <tr>
                 <th>
@@ -248,12 +248,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  VBPS,Greater Noida
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Mayo College,Ajmer</td>
 
-                <td>TBA</td>
+                <td>DPS RKP & MSN</td>
               </tr>
               <tr>
                 <th>
@@ -276,11 +276,11 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  Sommerville School Noida & MSN
                   <br />
                 </td>
-                <td>TBA</td>
-                <td>TBA</td>
+                <td>Jaypee Public School Noida</td>
+                <td>Mayor College , Ajmer</td>
               </tr>
               <tr>
                 <th>
@@ -300,12 +300,12 @@ function App() {
                   </div>
                 </td>
                 <td className="font-bold">
-                  TBA
+                  VBPS,Greater Noida
                   <br />
                 </td>
-                <td>TBA</td>
+                <td>Mayo College,Ajmer</td>
 
-                <td>TBA</td>
+                <td>The Khaitan School,Noida</td>
               </tr>
             </tbody>
             {/* foot */}
